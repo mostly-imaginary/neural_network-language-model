@@ -1,0 +1,11 @@
+{
+  "models": [
+    {
+      "id": "chatnotgpt_v1",
+      "name": "ChatNotGPT V1",
+      "path": "models/chatnotgpt/v1",
+      "version": "v1",
+      "tokenizer": "BPE"
+    }
+  ]
+}

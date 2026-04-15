@@ -4,3 +4,7 @@ __pycache__/
 .env
 .vscode/
 .DS_Store
+datasets/
+models/*
+!models/registry.json
+!models/**/config.json
