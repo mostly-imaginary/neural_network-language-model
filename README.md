@@ -24,6 +24,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # Project Structure
+```
 neural_network-language-model/
 │
 ├── datasets/
@@ -58,6 +59,8 @@ neural_network-language-model/
 │
 └── tests/
 
+```
+
 # Dataset setup
 
 ## 1. Create dataset folder
@@ -86,6 +89,7 @@ Models are defined using a registry system:
 models/registry.json
 
 ### Example:
+```
 {
   "models": [
     {
@@ -97,11 +101,13 @@ models/registry.json
     }
   ]
 }
+```
 
 ## Configuration file
 models/path_to_model/config.json
 
 ### Example config.json:
+```
 {
   "model_id": "chatnotgpt_v1",
   "model_name": "ChatNotGPT",
@@ -144,6 +150,7 @@ models/path_to_model/config.json
     }
   ]
 }
+```
 
 # Tokenization details
 * Tokenizer is character-level BPE
@@ -158,4 +165,4 @@ models/path_to_model/config.json
 # Future improvements
 * Adding Neural Network
 * Adding embeddings (Hopefully soon)
-* Faster BPE
+* Faster BPE algorithm
