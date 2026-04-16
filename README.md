@@ -15,13 +15,13 @@ The project currently implements:
 ## 1. Create virtual environment
 
 ### Windows:
-python -m venv .venv
+```python -m venv .venv```
 
 ### Mac/Linux:
-source .venv/bin/activate
+```source .venv/bin/activate```
 
 ## 2. Install dependencies
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 # Project Structure
 ```
@@ -64,14 +64,14 @@ neural_network-language-model/
 # Dataset setup
 
 ## 1. Create dataset folder
-Make sure datasets/wikipedia/v1 exists
+Make sure ```datasets/wikipedia/v1``` exists
 
 ## 2. Download dataset
-Run: python -m download.fetch_wiki_dataset
-This generates: datasets/wikipedia/v1/wiki_subset.txt
+Run: ```python -m download.fetch_wiki_dataset```
+This generates: ```datasets/wikipedia/v1/wiki_subset.txt```
 
 # Training (BPE only for now)
-Run: python -m src.model.train
+Run: ```python -m src.model.train```
 
 This will:
 
@@ -86,7 +86,7 @@ This will:
 Models are defined using a registry system:
 
 ## Registry file
-models/registry.json
+```models/registry.json```
 
 ### Example:
 ```
@@ -104,7 +104,7 @@ models/registry.json
 ```
 
 ## Configuration file
-models/path_to_model/config.json
+```models/path_to_model/config.json```
 
 ### Example config.json:
 ```

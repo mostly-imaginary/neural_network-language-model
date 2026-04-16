@@ -1,0 +1,42 @@
+{
+  "model_id": "chatnotgpt_v1",
+  "model_name": "ChatNotGPT",
+  "version": "v1",
+
+  "tokenizer": {
+    "type": "BPE",
+    "vocab_size": 2001,
+    "merges_path": "bpe_merges.txt",
+    "vocab_path": "bpe_vocab.txt",
+    "special_tokens": ["<unk>"],
+    "dataset_path": "datasets/wikipedia/v1/wiki_subset.txt"
+  },
+
+  "model": {
+    "embedding_dim": 128,
+    "context_size": 100
+  },
+
+  "training": {
+    "batch_size": 32,
+    "learning_rate": 0.001
+  },
+
+  "layers": [
+    {
+      "type": "linear",
+      "activation": "relu",
+      "size": 128
+    },
+    {
+      "type": "linear",
+      "activation": "relu",
+      "size": 128
+    },
+    {
+      "type": "linear",
+      "activation": "softmax",
+      "size": 1000
+    }
+  ]
+}
